@@ -4,37 +4,35 @@
 
         <title> Drone Project </title>
         <link href="stylesheet.css" type="text/css" rel="stylesheet" />
+        
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
 
     </head>
 
+    
     <body>
         <h1>
             Drone 
         </h1> 
-            
+            <div id="datai">  </div>
         <a href="index.html" class="button"> HOME </a>
         <a href="about.html" class="button"> ABOUT </a> 
         <a href="webstuff.html" class="button"> WEB </a>
 
-        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
 
         <script>
-        // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyCx63fq8Y4ce4BLRGGE4udP3iGy-579zAA",
-                authDomain: "fantastic-ac970.firebaseapp.com",
-                databaseURL: "https://fantastic-ac970.firebaseio.com",
-                projectId: "fantastic-ac970",
-                storageBucket: "",
-                messagingSenderId: "81123527942"
-            };
-            firebase.initializeApp(config);
-            var database = firebase.database();
+            setInterval( function() { 
+                console.log("hello"); 
+                $.ajax ({
+                    url: "data.txt",
+
+                })
+                .done (function(data) { console.log(data);
+                                        $('#datai').html(data); })
+            }, 5000);
 
         </script>
     </body>
-</html>
+</html> 
