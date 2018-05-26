@@ -9,39 +9,60 @@
     </head>
 
     <body> 
-        
-        <h1>
-            Drone 
-        </h1> 
-    
-        <a href="index.html" class="button"> HOME </a>
-        <a href="about.html" class="button"> ABOUT </a> 
-        <a href="webstuff.html" class="button"> WEB </a>
-
-        <hr>
-        <h2> About </h2>
-        <p> 
-            We created a surveillance drone that is capable of detecting motion, recording
-            voice and transmitting that data to a Web app over Bluetooth. This system has
-            countless applications, such as monitoring homes and near military bases. 
-        </p>
-
-        <hr>
-        <h2> How We Created It </h2>
-        <p> 
-            Using an Arduino Uno and its sensors, including motion, sound, and Bluetooth, we 
-            are able to detect the motion within a large range and 
+        <div class="noscroll">
+            <div class="overlay">
+                <h1>
+                    Drone 
+                </h1> 
             
-        </p>
+                <a href="index.html" class="button"> HOME </a>
+                <a href="about.html" class="button"> ABOUT </a> 
+                <a href="webstuff.html" class="button"> WEB </a>
 
-        <hr>
-        <h2> Data Receiving </h2>
-        <p> via Bluetooth from the Arduino </p>
+            
+                <h2> About </h2>
+                <p> 
+                    We created a prototype for a surveillance drone that is capable of detecting and recording motion,
+                    and transmitting that data to a computer system over Bluetooth. This system is then
+                    able to send the data over to a Web browser, who can provide real-time updates. This
+                    project has countless security applications, including monitoring homes to prevent homes
+                    break-ins, and monitoring near country borders to prevent illegal crossings. 
+                </p>
+                <br> <br>
+                
+                <h2> How We Created It </h2>
+                <p> 
+                    Using an Arduino Uno and its sensors, including motion, sound, and Bluetooth, we 
+                    are able to detect the slightest motion within a large range. 
+                    
+                </p>
+                <br> <br>
+                
+                <h2> Data Receiving </h2>
+                <p> Currently trying to use the Firebase Realtime Database to 
+                </p>
+                <br> <br>
+                
+                <h2> Extensions </h2>
+                <p> Some possible extensions we could implement for the system include attaching the sound 
+                    sensor when available so voice recordings could potentially be transmitted to the 
+                    Web browser. We could also use speech-to-text recognition tools to provide the Web with 
+                    more forms of data. 
+                    <br>
+                    A potential machine learning application could include running various tests on data 
+                    received to determine whether there are clear sentiments involved, or photo analysis for 
+                    crime scenes. 
+                </p>
+                <br> <br>
 
-        <hr>
-        <h2> Source </h2>
-        <p> View the repository <a href=https://github.com/limelody/enghack-site> here</a>!</p>
-        <p> All Arduino files are available <a href=https://drive.google.com/open?id=1Fk9bFCpER8t13etGb770uVNJy-yA_TIM> here</a>!</p>
+                <h2> Source </h2>
+                <p> View the repository <a href=https://github.com/limelody/enghack-site> here</a>!</p>
+                <p> All Arduino files are <a href=https://drive.google.com/open?id=1Fk9bFCpER8t13etGb770uVNJy-yA_TIM> 
+                    also available</a>.
+                </p>
+                <br> <br>
 
+            </div>
+        </div>
     </body>
 </html>
