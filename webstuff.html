@@ -16,21 +16,32 @@
         <h1>
             Drone 
         </h1> 
-            <div id="datai">  </div>
+            
         <a href="index.html" class="button"> HOME </a>
         <a href="about.html" class="button"> ABOUT </a> 
         <a href="webstuff.html" class="button"> WEB </a>
-
+        <div id="datai">  </div>
 
         <script>
+
             setInterval( function() { 
                 console.log("hello"); 
                 $.ajax ({
                     url: "data.txt",
 
                 })
-                .done (function(data) { console.log(data);
-                                        $('#datai').html(data); })
+                .done (function(data) { console.log(data); 
+                                        var data_array = data.split("\n");
+                                        var data2 = '<ul>';
+                                        
+                                        data_array.forEach(function(entry) {
+                                            console.log(entry);
+                                            data2 += '<li>' + entry + '</li>';
+                                        });
+
+                                        data2 += '</ul>';
+                                        
+                                        $('#datai').html(data2); })
             }, 5000);
 
         </script>
