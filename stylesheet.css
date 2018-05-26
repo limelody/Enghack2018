@@ -6,6 +6,11 @@ body {
 
 }
 
+h1 {
+
+    font-family: 'Eagle Lake', cursive;
+    text-align: center; 
+}
 h2 {
     font-family: 'Indie Flower', cursive;
     padding: 10px;
@@ -62,3 +67,7 @@ a.button {
 
 [aria-hidden="true"]  { display: none; }
 [aria-hidden="false"] { display: block; }
+
+#datai {
+    font-family: 'Open Sans', sans-serif;
+}
