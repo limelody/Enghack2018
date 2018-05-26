@@ -15,6 +15,23 @@
         <a href="index.html" class="button"> Home </a>
         <a href="about.html" class="button"> About </a> 
         <a href="webstuff.html" class="button"> WEB </a>
-        
+
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCx63fq8Y4ce4BLRGGE4udP3iGy-579zAA",
+            authDomain: "fantastic-ac970.firebaseapp.com",
+            databaseURL: "https://fantastic-ac970.firebaseio.com",
+            projectId: "fantastic-ac970",
+            storageBucket: "",
+            messagingSenderId: "81123527942"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+        </script>
     </body>
 </html>
