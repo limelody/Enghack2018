@@ -1,6 +1,9 @@
-# Website for EngHack 
+# EagleEye, a drone surveillance system 
+Created by Jonathan Lin, Connor Sweet, Melody Li, and Tibi Andronescu
 
-## Steps to Run on Windows Powershell:
+## How to run the Website for EngHack 
+
+### Steps to Run on Windows Powershell:
 
 1. Clone repository
 
