@@ -1,7 +1,7 @@
 # EagleEye, a drone surveillance system 
 Created by Jonathan Lin, Connor Sweet, Melody Li, and Tibi Andronescu
 
-## How to run the Website for EngHack 
+## How to run the Website 
 
 ### Steps to Run on Windows Powershell:
 
@@ -18,3 +18,5 @@ Created by Jonathan Lin, Connor Sweet, Melody Li, and Tibi Andronescu
 4. Type:
 
     `npm start`
+
+Note: The website retrieves information from a file called data.txt that should be located in the same folder as the source code. You can simply create that text file, add some information there, save it, and you'll see it updated to the server almost immediately!
